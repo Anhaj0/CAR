@@ -1,28 +1,74 @@
+/* Hero Section Redesign */
 .hero {
-    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-        url('https://images.unsplash.com/photo-1468817170350-023deb6a5e35?q=80&w=2000&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center bottom;
+    background-color: var(--surface-alt);
+    /* Light background for clean look */
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 0 var(--spacing-sm);
+    padding: var(--spacing-xxl) 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    gap: var(--spacing-lg);
+}
+
+.hero-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-content {
+    flex: 1.5;
+    /* Give more space to text */
+    flex-direction: column;
+}
+
+.hero-card-left,
+.hero-card-right {
+    display: none;
+    /* Hidden on mobile */
+}
+
+.hero-car-img {
+    max-width: 120%;
+    /* Allow cars to overlap slightly or be large */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s ease;
+}
+
+.hero-card-left .hero-car-img {
+    transform: scaleX(-1) translateX(20%);
+    /* Flip to face center */
+}
+
+.hero-card-right .hero-car-img {
+    transform: translateX(-20%);
 }
 
 .hero-title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: var(--spacing-md);
     line-height: 1.2;
+    color: var(--primary);
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: var(--spacing-lg);
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-muted);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -33,6 +79,16 @@
     flex-direction: column;
     gap: var(--spacing-sm);
     justify-content: center;
+    align-items: center;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .hero-card-left,
+    .hero-card-right {
+        display: flex;
+    }
 }
 
 .bg-light {

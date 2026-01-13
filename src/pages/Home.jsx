@@ -11,16 +11,35 @@ const Home = () => {
     return (
         <div className="home-page">
             {/* Hero Section */}
+            {/* Hero Section */}
             <section className="hero">
-                <div className="container hero-content">
-                    <h1 className="hero-title">Explore Sri Lanka with Reliable Car Rentals</h1>
-                    <p className="hero-subtitle">
-                        Self-drive and chauffeur-driven vehicles for a safe and memorable journey.
-                        Trusted by locals and tourists alike.
-                    </p>
-                    <div className="hero-actions">
-                        <Link to="/listings" className="btn btn-primary btn-lg">View Details / Book Now</Link>
-                        <a href="https://wa.me/94771234567" className="btn btn-whatsapp btn-lg">WhatsApp Us</a>
+                <div className="container hero-container">
+                    <div className="hero-column hero-card-left">
+                        <img
+                            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=600&auto=format&fit=crop"
+                            alt="Left Car"
+                            className="hero-car-img"
+                        />
+                    </div>
+
+                    <div className="hero-column hero-content text-center">
+                        <h1 className="hero-title text-primary">Explore Sri Lanka with Reliable Car Rentals</h1>
+                        <p className="hero-subtitle text-muted">
+                            Self-drive and chauffeur-driven vehicles for a safe and memorable journey.
+                            Trusted by locals and tourists alike.
+                        </p>
+                        <div className="hero-actions justify-center">
+                            <Link to="/listings" className="btn btn-primary btn-lg">View Details / Book Now</Link>
+                            <a href="https://wa.me/94771234567" className="btn btn-whatsapp btn-lg">WhatsApp Us</a>
+                        </div>
+                    </div>
+
+                    <div className="hero-column hero-card-right">
+                        <img
+                            src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?q=80&w=600&auto=format&fit=crop"
+                            alt="Right Car"
+                            className="hero-car-img"
+                        />
                     </div>
                 </div>
             </section>

@@ -105,7 +105,14 @@ label {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-sm);
+  padding: 0 var(--spacing-lg);
+  /* Increased from sm to lg for better side spacing */
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
 }
 
 .section {

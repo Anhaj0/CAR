@@ -18,9 +18,13 @@ const About = () => {
 
                     <div className="mb-16">
                         <img
-                            src="https://images.unsplash.com/photo-1596706059902-8959d0738d01?q=80&w=1200&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-1506038634487-60a69ae45595?q=80&w=1200&auto=format&fit=crop"
                             alt="Sri Lanka Road Trip"
                             className="w-full rounded-xl shadow-lg mb-8 h-96 object-cover"
+                            onError={(e) => {
+                                e.target.src = 'https://images.unsplash.com/photo-1596706059902-8959d0738d01?q=80&w=1200&auto=format&fit=crop';
+                                e.target.onerror = null;
+                            }}
                         />
 
                         <h2 className="text-2xl font-bold mb-4">Our Story</h2>
