@@ -6,10 +6,21 @@ import './VehicleCard.css';
 const VehicleCard = ({ car }) => {
     const { id, name, type, image, transmission, passengers, fuel, price, featured } = car;
 
+    const handleImageError = (e) => {
+        e.target.src = 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=800&auto=format&fit=crop';
+        e.target.onerror = null;
+    };
+
     return (
         <div className={`card vehicle-card ${featured ? 'featured' : ''}`}>
             <div className="card-image-wrapper">
-                <img src={image} alt={name} className="card-image" loading="lazy" />
+                <img
+                    src={image}
+                    alt={name}
+                    className="card-image"
+                    loading="lazy"
+                    onError={handleImageError}
+                />
                 <span className="vehicle-tag">{type}</span>
             </div>
 
