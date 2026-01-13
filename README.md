@@ -1,16 +1,46 @@
-# React + Vite
+# Car Rental Service - Professional Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and trust-focused website for a Sri Lanka-based car rental service. Built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**View the live website here:** [https://Anhaj0.github.io/CAR/](https://Anhaj0.github.io/CAR/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Website Preview](https://images.unsplash.com/photo-1468817170350-023deb6a5e35?q=80&w=800&auto=format&fit=crop)
 
-## React Compiler
+## ✨ Features
+- **Mobile-First Design:** Optimized for smartphones and tablets.
+- **Vehicle Fleet Listing:** Filterable and detailed view of available cars.
+- **Service Overview:** Clear breakdown of self-drive, chauffeur, and airport transfer services.
+- **WhatsApp Integration:** "Click-to-chat" buttons for instant booking inquiries.
+- **Trusted Aesthetics:** Professional color palette and typography.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- **Framework:** React 19 + Vite
+- **Styling:** Vanilla CSS (Custom Design System)
+- **Icons:** Lucide React
+- **Deployment:** GitHub Pages
 
-## Expanding the ESLint configuration
+## 🏃‍♂️ Running Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Anhaj0/CAR.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd CAR
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 📦 Deployment
+To deploy changes to GitHub Pages:
+```bash
+npm run deploy
+```
+This command builds the project and pushes the `dist` folder to the `gh-pages` branch.
